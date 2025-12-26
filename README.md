@@ -4,7 +4,6 @@
 
 **Data Science & Machine Learning Developer | AI Systems | Frontend Integration**
 
-<br/>
 
 ## About Me
 
