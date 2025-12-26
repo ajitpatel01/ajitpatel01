@@ -4,13 +4,10 @@
 
 ## **Data Science & Machine Learning Developer | AI Systems | Frontend Integration**
 
----
 
 ## About Me  
 
 B.Tech CSE (AI & ML) undergraduate with hands-on experience in data science, machine learning, and frontend development. Specialized in building API-driven web applications, predictive and anomaly detection models, and integrating AI systems into scalable, production-oriented platforms.
-
----
 
 ## Technical Expertise  
 
