@@ -1,16 +1,18 @@
-<img align="right" height="180" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="coder gif" />
-
 # Hi, I’m Ajit Patel
 
 **Data Science & Machine Learning Developer | AI Systems | Frontend Integration**
 
+---
 
 ## About Me
 
-
 B.Tech CSE (AI & ML) undergraduate with hands-on experience in data science, machine learning, and frontend development. Specialized in building API-driven web applications, predictive and anomaly detection models, and integrating AI systems into scalable, production-oriented platforms.
 
+---
+
 ## Technical Expertise  
+
+<img align="right" height="190" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="coder gif" />
 
 **Frontend Development**  
 ReactJS, JavaScript, HTML, CSS, TailwindCSS  
@@ -30,6 +32,8 @@ Git/GitHub, JIRA, Power BI
 Data preprocessing pipelines  
 Neural networks (fundamentals), NLP (fundamentals)  
 Data structures and algorithms (intermediate)  
+
+<br clear="right"/>
 
 ---
 
