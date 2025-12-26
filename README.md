@@ -1,4 +1,4 @@
-<img align="right" height="180" src="profile-banner.png" alt="Developer Illustration" />
+<img align="right" height="180" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="coder gif" />
 
 # Hi, I’m Ajit Patel
 
