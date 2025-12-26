@@ -1,9 +1,10 @@
-<img align="right" height="180" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="coder gif" />
+<img align="right" height="180" src="profile-banner.png" alt="Developer Illustration" />
 
 # Hi, I’m Ajit Patel  
 
 ## **Data Science & Machine Learning Developer | AI Systems | Frontend Integration**
 
+<br/>
 
 ## About Me  
 
