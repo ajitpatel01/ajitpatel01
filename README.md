@@ -1,12 +1,13 @@
 <img align="right" height="180" src="profile-banner.png" alt="Developer Illustration" />
 
-# Hi, I’m Ajit Patel  
+# Hi, I’m Ajit Patel
 
-## **Data Science & Machine Learning Developer | AI Systems | Frontend Integration**
+**Data Science & Machine Learning Developer | AI Systems | Frontend Integration**
 
 <br/>
 
-## About Me  
+## About Me
+
 
 B.Tech CSE (AI & ML) undergraduate with hands-on experience in data science, machine learning, and frontend development. Specialized in building API-driven web applications, predictive and anomaly detection models, and integrating AI systems into scalable, production-oriented platforms.
 
