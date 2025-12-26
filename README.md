@@ -1,19 +1,19 @@
 Hi, I’m Ajit Patel
 
-Frontend & AI/ML Developer | Open to Software and ML Engineering Roles
+Data Science & Machine Learning Developer | AI Systems | Frontend Integration
 
 About Me
-B.Tech Computer Science (AI & ML) undergraduate (2022–2026, CGPA 8.3) with experience in building responsive frontend applications and developing data-driven machine learning systems. Strong in translating data insights into scalable, production-ready solutions.
 
-Focus Areas
+B.Tech CSE (AI & ML) undergraduate with hands-on experience in data science, machine learning, and frontend development. Specialized in building API-driven web applications, predictive and anomaly detection models, and integrating AI systems into scalable, production-oriented platforms.
 
-Frontend: ReactJS, JavaScript, TypeScript (working knowledge), HTML, CSS, TailwindCSS
+Technical Expertise
 
-AI & Data: Machine Learning, Time Series Analysis, Anomaly Detection, EDA, Feature Engineering
+Frontend: ReactJS, JavaScript, TypeScript (working knowledge), HTML, CSS, TailwindCSS; responsive and API-driven UI development.
+Programming & Databases: Python, C++, SQL, MySQL.
+Machine Learning & Data: Scikit-learn, Pandas, NumPy, time series analysis, exploratory data analysis (EDA), feature engineering, classification, and anomaly detection.
+Backend & Tools: Node.js (basic), REST API integration, Git/GitHub, JIRA, Power BI.
+Core Concepts: Data preprocessing pipelines, neural networks (fundamentals), NLP (fundamentals), data structures and algorithms (intermediate).
 
-Programming: Python, C++, SQL
+Research & Publication
 
-Systems & Tools: REST APIs, MySQL, Git/GitHub, Power BI, JIRA
-
-Experience & Research
-Hands-on experience with end-to-end ML workflows, predictive modeling, and data visualization. Published research at an IEEE-recognized international conference focused on data analytics and machine learning insights.
+Published research focused on data analytics and machine learning-based insights, presented at an IEEE-recognized international conference.
