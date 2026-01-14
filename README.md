@@ -15,7 +15,7 @@ B.Tech CSE (AI & ML) undergraduate with hands-on experience in data science, mac
 <img align="right" height="190" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="coder gif" />
 
 **Frontend Development**  
-ReactJS, JavaScript, HTML, CSS, TailwindCSS  
+ReactJS, JavaScript, HTML, CSS
 
 **Programming & Databases**  
 Python, C++, SQL, MySQL  
