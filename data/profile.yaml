@@ -1,0 +1,82 @@
+# Single source of truth for profile README surfaces.
+# Edit this file, then run: ./scripts/build.sh --info
+# See docs/CONTENT.md for field rules and character budgets.
+
+identity:
+  name: Ajit Patel
+  handle: ajit
+  host: github
+  title: Software Engineer · AI/ML · Full-Stack
+  prompt: "ajit@github: ~$"
+
+badges:
+  - label: Portfolio
+    value: ajitpatel.framer.website
+    color: "0d1117"
+    logo: framer
+    logo_color: white
+    url: https://ajitpatel.framer.website/
+  - label: LinkedIn
+    value: ajitpatel404
+    color: "0A66C2"
+    logo: linkedin
+    logo_color: white
+    url: https://www.linkedin.com/in/ajitpatel404
+  - label: GitHub
+    value: ajitpatel01
+    color: "238636"
+    logo: github
+    logo_color: white
+    url: https://github.com/ajitpatel01
+
+info_card:
+  width: 520
+  height: 400
+  titlebar: "ajit@github: ~$ neofetch"
+  # Row kinds: host | kv | sec | bul | gap
+  rows:
+    - kind: host
+    - kind: kv
+      key: Now
+      value: "Software Engineer (AI/ML & Full-Stack) @ KaDeep AI"
+    - kind: kv
+      key: Focus
+      value: "Agentic systems · autonomous workflows · shipping"
+    - kind: kv
+      key: Edu
+      value: "B.Tech CSE (AI & ML), Bennett University"
+    - kind: gap
+    - kind: sec
+      title: Stack
+    - kind: kv
+      key: Languages
+      value: "Python, TypeScript, JavaScript, C++, SQL"
+    - kind: kv
+      key: Frontend
+      value: "React, Next.js, Tailwind, Framer Motion"
+    - kind: kv
+      key: Backend
+      value: "Node, FastAPI, Express, Redis, MongoDB"
+    - kind: kv
+      key: AI / ML
+      value: "PyTorch Geometric, Scikit-learn, Gemini, Groq"
+    - kind: kv
+      key: Platforms
+      value: "GitHub Actions, Railway, Vercel, Tauri"
+    - kind: gap
+    - kind: sec
+      title: Highlights
+    - kind: bul
+      text: "Founding eng — agentic AI & full-stack at KaDeep AI"
+    - kind: bul
+      text: "IEEE CICTN-2025 — ML drivers of education outcomes"
+    - kind: bul
+      text: "GCNShield — GCN fraud detection (ICISESSC 2026)"
+
+ascii:
+  titlebar: "ajit@github: ~$ ./portrait.sh"
+  whoami: Ajit Patel
+
+heatmap:
+  titlebar: "ajit@github: ~/contributions --graph"
+  github_user: ajitpatel01

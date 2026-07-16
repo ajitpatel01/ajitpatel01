@@ -1,46 +1,26 @@
-# Hi, I’m Ajit Patel
+<div align="center">
 
-**Data Science & Machine Learning Developer | AI Systems | Frontend Integration**
+<!-- hero: monochrome ASCII portrait (types in) beside a neofetch-style info
+     panel. regenerate: ./scripts/build.sh  — see docs/PIPELINE.md -->
+<table>
+<tr>
+<td valign="top"><img src="./ajit-ascii.svg" width="370" alt="Ajit Patel — ASCII portrait" /></td>
+<td valign="top"><img src="./info-card.svg" width="520" alt="Ajit Patel — experience, stack, highlights" /></td>
+</tr>
+</table>
 
----
+## Ajit Patel
 
-## About Me
+**Software Engineer · AI/ML · Full-Stack**
 
-B.Tech CSE (AI & ML) undergraduate with hands-on experience in data science, machine learning, and frontend development. Specialized in building API-driven web applications, predictive and anomaly detection models, and integrating AI systems into scalable, production-oriented platforms.
+[![Portfolio](https://img.shields.io/badge/Portfolio-ajitpatel.framer.website-0d1117?style=for-the-badge&logo=framer&logoColor=white)](https://ajitpatel.framer.website/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ajitpatel404-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ajitpatel404)
+[![GitHub](https://img.shields.io/badge/GitHub-ajitpatel01-238636?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ajitpatel01)
 
----
+<br>
 
-## Technical Expertise  
+<!-- animated contribution graph: real data, boxes reveal cell by cell
+     (regenerated daily by .github/workflows/update-profile-art.yml) -->
+<img src="./contrib-heatmap.svg" width="860" alt="Ajit's GitHub contribution graph — auto-refreshed daily" />
 
-<img align="right" height="190" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="coder gif" />
-
-**Frontend Development**  
-ReactJS, JavaScript, HTML, CSS
-
-**Programming & Databases**  
-Python, C++, SQL, MySQL  
-
-**Machine Learning & Data**  
-Scikit-learn, Pandas, NumPy  
-Time series analysis, exploratory data analysis (EDA), feature engineering  
-
-**Backend & Tools**  
-Node.js (basic), REST API integration  
-Git/GitHub, JIRA, Power BI  
-
-**Core Concepts**  
-Data preprocessing pipelines  
-Neural networks (fundamentals), NLP (fundamentals)  
-Data structures and algorithms (intermediate)  
-
-<br clear="right"/>
-
----
-
-## Research & Publication  
-
-Published research focused on data analytics and machine learning-based insights, presented at an IEEE-recognized international conference.
-
----
-
-> *"Creating, Learning, and Evolving"*
+</div>
