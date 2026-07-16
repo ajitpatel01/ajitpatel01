@@ -26,9 +26,13 @@ jobs:
       - name: Install heatmap dependencies
         run: pip install requests==2.32.3 beautifulsoup4==4.12.3 PyYAML==6.0.2
 
-      - name: Scrape real contribution data
+      - name: Fetch contribution data (GraphQL if token set)
         env:
           GH_PROFILE_USER: ajitpatel01
+          # Classic PAT with read:user — includes private contribs to match logged-in profile.
+          # Repo Settings → Secrets → Actions → PROFILE_GITHUB_TOKEN
+          PROFILE_GITHUB_TOKEN: ${{ secrets.PROFILE_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/fetch_contributions.py
 
       - name: Render contribution heatmap SVG

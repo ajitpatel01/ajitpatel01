@@ -68,6 +68,20 @@ Current surface: Portfolio · LinkedIn · GitHub (no Instagram / live terminal).
 | `info_card.*` | `make_info_card.py` |
 | `ascii.*` | `make_ascii_svg.py` |
 | `heatmap.github_user` | `fetch_contributions.py` / streak fallback |
+
+### Heatmap totals (private contributions)
+
+If your logged-in GitHub shows a higher total than the README SVG, add a classic PAT (`read:user`) as Actions secret `PROFILE_GITHUB_TOKEN` (and export the same locally when regenerating). See [PIPELINE.md](PIPELINE.md).
 | `badges` | documented for README; maintain README shields in sync when changing URLs |
 
 When you change badge URLs, update the shield links in [`README.md`](../README.md) in the same commit.
+
+### Tech stack badges
+
+Edit [`data/tech_stack.yaml`](../data/tech_stack.yaml), then:
+
+```bash
+./scripts/build.sh --stack
+```
+
+Icons are Simple Icons SVGs cached under `assets/icons/`. Slugs must exist on [simpleicons.org](https://simpleicons.org). GitHub READMEs cannot run JS hover — motion is SMIL entrance animation inside `tech-stack.svg`.

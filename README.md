@@ -13,11 +13,18 @@
 
 **Software Engineer · AI/ML · Full-Stack**
 
+<!-- social: shields for-the-badge (clickable) — matches portfolio / LinkedIn / GitHub chrome -->
 [![Portfolio](https://img.shields.io/badge/Portfolio-ajitpatel.framer.website-0d1117?style=for-the-badge&logo=framer&logoColor=white)](https://ajitpatel.framer.website/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ajitpatel404-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ajitpatel404)
 [![GitHub](https://img.shields.io/badge/GitHub-ajitpatel01-238636?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ajitpatel01)
 
-<br>
+<br/>
+
+<!-- animated SaaS tech stack: Simple Icons + staggered SMIL entrance
+     edit data/tech_stack.yaml → ./scripts/build.sh --stack -->
+<img src="./tech-stack.svg" width="860" alt="Ajit Patel — Tech Stack" />
+
+<br/>
 
 <!-- animated contribution graph: real data, boxes reveal cell by cell
      (regenerated daily by .github/workflows/update-profile-art.yml) -->

@@ -61,6 +61,16 @@ STATIC=1 python scripts/make_info_card.py
 
 Portrait SVGs are **not** regenerated in CI (avoids pulling `rembg` on every run).
 
+### Match logged-in totals (private contributions)
+
+Public HTML scrape omits private activity (e.g. ~102 vs ~334 on a logged-in profile).
+
+1. Create a **classic** Personal Access Token with `read:user`
+2. Add repo secret `PROFILE_GITHUB_TOKEN`
+3. Re-run the workflow (or locally: `PROFILE_GITHUB_TOKEN=… ./scripts/build.sh --heatmap`)
+
+GraphQL then returns the same calendar + total GitHub shows when you are signed in.
+
 ## Fallback heatmap
 
 If the HTML scrape fails locally:
