@@ -76,6 +76,16 @@ If your logged-in GitHub shows a higher total than the README SVG, add a classic
 
 When you change badge URLs, update the shield links in [`README.md`](../README.md) in the same commit.
 
+### Social pills (SaaS)
+
+Edit [`data/social.yaml`](../data/social.yaml), then:
+
+```bash
+./scripts/build.sh --social
+```
+
+Outputs clickable SVGs in `badges/` (rounded cards with label, handle, and hint). Keep README `<a href>` targets in sync when URLs change.
+
 ### Tech stack badges
 
 Edit [`data/tech_stack.yaml`](../data/tech_stack.yaml), then:

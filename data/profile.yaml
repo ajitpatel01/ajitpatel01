@@ -9,24 +9,16 @@ identity:
   title: Software Engineer · AI/ML · Full-Stack
   prompt: "ajit@github: ~$"
 
+# Legacy shields metadata — SaaS pills live in data/social.yaml + badges/*.svg
 badges:
   - label: Portfolio
     value: ajitpatel.framer.website
-    color: "0d1117"
-    logo: framer
-    logo_color: white
     url: https://ajitpatel.framer.website/
   - label: LinkedIn
     value: ajitpatel404
-    color: "0A66C2"
-    logo: linkedin
-    logo_color: white
     url: https://www.linkedin.com/in/ajitpatel404
   - label: GitHub
     value: ajitpatel01
-    color: "238636"
-    logo: github
-    logo_color: white
     url: https://github.com/ajitpatel01
 
 info_card:

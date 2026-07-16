@@ -9,6 +9,7 @@ PY="${PYTHON:-python3}"
 DO_PREP=1
 DO_ASCII=1
 DO_INFO=1
+DO_SOCIAL=1
 DO_STACK=1
 DO_HEAT=1
 
@@ -16,10 +17,11 @@ usage() {
   cat <<'EOF'
 Usage: ./scripts/build.sh [flags]
 
-  (default)     prep photo → ascii → info → tech stack → heatmap
+  (default)     prep → sketch → info → social pills → tech stack → heatmap
   --prep        only run prep_photo.py
   --ascii       only run make_ascii_svg.py
   --info        only run make_info_card.py
+  --social      only run make_social_badges.py (SaaS link pills)
   --stack       only run make_tech_stack_svg.py
   --heatmap     only fetch + render contribution heatmap
   --no-prep     skip photo prep (reuse assets/source-prepped.png)
@@ -31,6 +33,7 @@ if [[ $# -gt 0 ]]; then
   DO_PREP=0
   DO_ASCII=0
   DO_INFO=0
+  DO_SOCIAL=0
   DO_STACK=0
   DO_HEAT=0
   while [[ $# -gt 0 ]]; do
@@ -38,9 +41,10 @@ if [[ $# -gt 0 ]]; then
       --prep) DO_PREP=1 ;;
       --ascii) DO_ASCII=1 ;;
       --info) DO_INFO=1 ;;
+      --social) DO_SOCIAL=1 ;;
       --stack) DO_STACK=1 ;;
       --heatmap) DO_HEAT=1 ;;
-      --no-prep) DO_PREP=0; DO_ASCII=1; DO_INFO=1; DO_STACK=1; DO_HEAT=1 ;;
+      --no-prep) DO_PREP=0; DO_ASCII=1; DO_INFO=1; DO_SOCIAL=1; DO_STACK=1; DO_HEAT=1 ;;
       -h|--help) usage; exit 0 ;;
       *) echo "unknown flag: $1" >&2; usage; exit 1 ;;
     esac
@@ -65,6 +69,11 @@ if [[ "$DO_INFO" -eq 1 ]]; then
   "$PY" scripts/make_info_card.py
 fi
 
+if [[ "$DO_SOCIAL" -eq 1 ]]; then
+  echo "→ make_social_badges"
+  "$PY" scripts/make_social_badges.py
+fi
+
 if [[ "$DO_STACK" -eq 1 ]]; then
   echo "→ make_tech_stack_svg"
   "$PY" scripts/make_tech_stack_svg.py
@@ -78,4 +87,4 @@ if [[ "$DO_HEAT" -eq 1 ]]; then
 fi
 
 echo "==> done"
-ls -la ajit-ascii.svg info-card.svg tech-stack.svg contrib-heatmap.svg 2>/dev/null || true
+ls -la ajit-ascii.svg info-card.svg tech-stack.svg contrib-heatmap.svg badges/*.svg 2>/dev/null || true

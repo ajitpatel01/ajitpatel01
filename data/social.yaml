@@ -1,0 +1,27 @@
+# Social link pills — SaaS style (rounded, informative). Regenerate: ./scripts/build.sh --social
+social:
+  title: Connect
+  height: 72
+  gap: 14
+  items:
+    - id: portfolio
+      label: Portfolio
+      value: ajitpatel.framer.website
+      hint: Product · case studies · builds
+      url: https://ajitpatel.framer.website/
+      accent: "0055FF"
+      logo: framer
+    - id: linkedin
+      label: LinkedIn
+      value: ajitpatel404
+      hint: Experience · writing · network
+      url: https://www.linkedin.com/in/ajitpatel404
+      accent: "0A66C2"
+      logo: linkedin
+    - id: github
+      label: GitHub
+      value: ajitpatel01
+      hint: Open source · commits · repos
+      url: https://github.com/ajitpatel01
+      accent: "3FB950"
+      logo: github
