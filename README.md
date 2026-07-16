@@ -4,7 +4,7 @@
      panel. regenerate: ./scripts/build.sh  — see docs/PIPELINE.md -->
 <table>
 <tr>
-<td valign="top"><img src="./ajit-ascii.svg" width="370" alt="Ajit Patel — ASCII portrait" /></td>
+<td valign="top"><img src="./ajit-ascii.svg" width="460" alt="Ajit Patel — ASCII portrait" /></td>
 <td valign="top"><img src="./info-card.svg" width="520" alt="Ajit Patel — experience, stack, highlights" /></td>
 </tr>
 </table>

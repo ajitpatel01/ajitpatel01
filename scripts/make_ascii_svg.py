@@ -29,8 +29,9 @@ ascii_cfg = profile.get("ascii", {})
 TITLEBAR_LABEL = ascii_cfg.get("titlebar", "ajit@github: ~$ ./portrait.sh")
 WHOAMI = ascii_cfg.get("whoami", profile["identity"]["name"])
 
-COLS = 100
-ROWS = 53
+# Wider grid so the portrait fills the terminal after subject crop.
+COLS = 112
+ROWS = 52
 CELL_W = 8
 CELL_H = 15
 RAMP = " .`:-=+*cs#%@"  # bright(sparse) -> dark(dense); leading space clears bg
@@ -40,6 +41,9 @@ BRIGHTNESS = 1.0
 GAMMA = 1.18
 SHARPEN = False
 WHITE_FLOOR = 0.80
+# Crop away empty white margins so the face spans most of COLS (not a slim center strip).
+CROP_WHITE = 248
+CROP_PAD_FRAC = 0.01
 
 PAD = 20
 TITLEBAR_H = 30
@@ -59,7 +63,31 @@ CURSOR = "#c9d1d9"
 ROW_DUR = 0.11
 STAGGER = 0.11
 
+
+def crop_to_subject(im, white_thresh=CROP_WHITE, pad_frac=CROP_PAD_FRAC):
+    """Tight crop around non-white pixels so the portrait fills the ASCII grid."""
+    import numpy as np
+
+    arr = np.asarray(im)
+    mask = arr < white_thresh
+    if not mask.any():
+        return im
+    ys, xs = np.where(mask)
+    left, right = int(xs.min()), int(xs.max())
+    top, bottom = int(ys.min()), int(ys.max())
+    bw, bh = right - left + 1, bottom - top + 1
+    pad_x = max(2, int(bw * pad_frac))
+    pad_y = max(2, int(bh * pad_frac))
+    h, w = arr.shape
+    left = max(0, left - pad_x)
+    right = min(w - 1, right + pad_x)
+    top = max(0, top - pad_y)
+    bottom = min(h - 1, bottom + pad_y)
+    return im.crop((left, top, right + 1, bottom + 1))
+
+
 im = Image.open(SRC).convert("L")
+im = crop_to_subject(im)
 if SHARPEN:
     im = im.filter(ImageFilter.UnsharpMask(radius=2, percent=140, threshold=2))
 im = ImageEnhance.Brightness(im).enhance(BRIGHTNESS)
