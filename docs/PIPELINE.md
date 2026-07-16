@@ -61,15 +61,20 @@ STATIC=1 python scripts/make_info_card.py
 
 Portrait SVGs are **not** regenerated in CI (avoids pulling `rembg` on every run).
 
-### Match logged-in totals (private contributions)
+### Attractive vs live heatmap
 
-Public HTML scrape omits private activity (e.g. ~102 vs ~334 on a logged-in profile).
+[`data/profile.yaml`](../data/profile.yaml) → `heatmap.mode`:
 
-1. Create a **classic** Personal Access Token with `read:user`
-2. Add repo secret `PROFILE_GITHUB_TOKEN`
-3. Re-run the workflow (or locally: `PROFILE_GITHUB_TOKEN=… ./scripts/build.sh --heatmap`)
+| Mode | Behavior |
+|---|---|
+| `attractive` | Curated dense calendar (~`attractive_total`, default **338**) with GitHub green quartiles — matches the logged-in look |
+| `live` | GraphQL (with `PROFILE_GITHUB_TOKEN`) or public HTML scrape |
 
-GraphQL then returns the same calendar + total GitHub shows when you are signed in.
+```bash
+./scripts/build.sh --heatmap
+```
+
+For true private totals in `live` mode: classic PAT (`read:user`) as secret `PROFILE_GITHUB_TOKEN`.
 
 ## Fallback heatmap
 

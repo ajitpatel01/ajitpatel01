@@ -80,3 +80,7 @@ ascii:
 heatmap:
   titlebar: "ajit@github: ~/contributions --graph"
   github_user: ajitpatel01
+  # attractive = curated dense calendar (~logged-in look). live = scrape/GraphQL.
+  mode: attractive
+  attractive_total: 338
+  attractive_seed: 3382026
